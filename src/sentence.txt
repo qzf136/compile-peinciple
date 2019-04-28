@@ -1,0 +1,10 @@
+int a;
+float b;
+a = 3;
+b = 3 + 4.5 * a;
+if true then a=1; else a=2;
+while a>b do a=1;
+
+float a;
+a = 3.4;
+d = 4;

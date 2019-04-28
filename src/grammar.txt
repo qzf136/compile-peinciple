@@ -1,0 +1,23 @@
+Z -> P
+P -> S M P | ε
+
+S -> X id ;
+X -> int | float
+
+
+S -> id = E ;
+E -> E + T | T
+T -> T * F | F
+F -> ( E )
+F -> intC
+F -> floatC
+F -> id
+
+S -> if B then M S N else M S
+S -> while M B do M S
+B -> B or M B
+B -> B and M B
+B -> not B | ( B ) | E K E | boolC
+K -> < | <= | == | != | > | >=
+M -> ε
+N -> ε
